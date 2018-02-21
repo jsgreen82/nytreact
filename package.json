@@ -1,0 +1,13 @@
+{
+  "name": "nytreact",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/jsgreen82/nytreact.git",
+  "author": "jsgreen82 <jacquegreen@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongoose": "^5.0.6"
+  }
+}
