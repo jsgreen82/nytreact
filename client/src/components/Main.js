@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import Search from "./pages/Search";
-import Results from "./pages/Results";
-import Saved from "./pages/Saved";
+import Search from "../pages/Search";
+import Results from "../pages/Results";
+import Saved from "../pages/Saved";
 import API from "../utils/API";
 
 import { Route, Link } from "react-router-dom";
 
-class App extends Component {
+class Main extends Component {
 	constructor(props){
 		super(props);
 	
@@ -29,7 +29,7 @@ class App extends Component {
 	}
 
 	saveArticle = (index) => {
-		event.preventDefault();
+		//event.preventDefault();
 	    API.saveArticle(this.state.searchResults[index]).then((response) => {
 	      this.getArticles();
 	    });
@@ -122,7 +122,6 @@ class App extends Component {
 			    	savedArticles={this.state.savedArticles}
 			    	removeArticle={this.removeArticle} />
 
-			<Footer />
 			</div> // End of container
 		);
 	}
@@ -130,4 +129,4 @@ class App extends Component {
 }
 
 
-export default App;
+export default Main;
